@@ -53,6 +53,11 @@ body {
     color: var(--main-text-color);
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 /* NAVBAR */
 .nav {
     display: flex;
