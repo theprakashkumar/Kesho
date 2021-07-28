@@ -1,0 +1,49 @@
+/* Style Required for Kesho Website */
+.kesho-nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: var(--main-background);
+}
+
+.kesho-home-container {
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 60%;
+}
+
+@media only screen and (max-width: 110rem) {
+    .kesho-home-container {
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 90rem) {
+    .kesho-home-container {
+        margin-top: 8rem;
+        max-width: 75%;
+    }
+
+    .kehso-brand {
+        font-size: 2rem;
+    }
+}
+
+.kehso-brand {
+    font-size: 4.5rem;
+}
+
+.kesho-home-button {
+    margin-top: 2rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .kesho-home-container {
+        margin-top: 8rem;
+        max-width: 75%;
+    }
+}

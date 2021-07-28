@@ -1,0 +1,186 @@
+/* Import Text Font */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* VARIABLES */
+:root {
+    /* Blue Gray */
+    --main-background: #f8fafc;
+    --main-text-color: #0f172a;
+    --main-text-light-color: #94a3b8;
+    /* 400 */
+    --success-dark: #34d399;
+    --success-light: #ecfdf5;
+    --warning-dark: #fb923c;
+    --warning-light: #fff7ed;
+    --error-dark: #f87171;
+    --error-light: #fef2f2;
+    --info-dark: #60a5fa;
+    --info-light: #eff6ff;
+    --input-outline: #d1d5db;
+}
+
+/* ! UTILITY CLASS WILL COME HERE */
+
+/* BASIC RESET & BODY STYLES */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: var(--input-outline);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: var(--main-background);
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--main-text-color);
+}
+
+/* NAVBAR */
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
+}
+
+.nav__brand {
+    font-family: "Pacifico", cursive;
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/* BUTTON */
+/* Button*/
+.btn {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1.3rem 4rem;
+    background: var(--main-background);
+    border: none;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.btn:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Icon Button */
+.btn--icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn--icon:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btn--icon__icon {
+    margin-right: 0.5rem;
+}
+
+/* Button Helper */
+.btn--sm {
+    font-size: 1.5rem;
+    padding: 1rem 2.8rem;
+}
+
+.btn--lg {
+    font-size: 1.8rem;
+    padding: 1.5rem 4.5rem;
+}
+
+/* Link Button */
+.btn--link {
+    border: none;
+    padding: 0.1rem;
+    border-bottom: 2px solid var(--main-text-color);
+    box-shadow: none;
+}
+
+.btn-link:hover {
+    background: var(--main-text-color);
+    color: var(--main-background);
+    transition: all 0.4s;
+}
+
+/* Floating Action Button */
+.btn--floating {
+    padding: 1.5rem;
+    background: var(--main-background);
+    border-radius: 50%;
+    display: flex;
+}
+
+.btn--floating:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Button Outlined */
+.btn--outlined {
+    border: 2px solid var(--main-text-color);
+    justify-content: space-between;
+}
+
+/* HEADING */
+.heading {
+    font-weight: 700;
+}
+
+.heading--h1 {
+    font-size: 5rem;
+}
+
+.heading--h2 {
+    font-size: 4.5rem;
+}
+
+.heading--h3 {
+    font-size: 4rem;
+}
+
+.heading--h4 {
+    font-size: 3.5rem;
+}
+
+.heading--h5 {
+    font-size: 3rem;
+}
+
+.heading--h6 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
