@@ -73,6 +73,49 @@ a {
     font-size: 30px;
 }
 
+/* AVATAR */
+/* Avatar Small */
+.avatar {
+    display: inline-block;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Avatar Extra Small */
+.avatar-xs {
+    width: 5rem;
+    height: 5rem;
+}
+
+/* Avatar Small */
+.avatar-s {
+    width: 7rem;
+    height: 7rem;
+}
+
+/* Avatar Medium */
+.avatar-md {
+    width: 10rem;
+    height: 10rem;
+}
+
+/* Avatar Large */
+.avatar-l {
+    width: 12rem;
+    height: 12rem;
+}
+
+/* AVATAR GROUP */
+.avatar-group {
+    display: flex;
+}
+
+.avatar-group__image {
+    margin-left: -1.7rem;
+    width: 7rem;
+    height: 7rem;
+}
+
 /* BUTTON */
 /* Button*/
 .btn {

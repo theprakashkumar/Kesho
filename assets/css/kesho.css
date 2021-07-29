@@ -42,19 +42,97 @@
 /* width */
 ::-webkit-scrollbar {
     width: 1rem;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
+}
+
+/* Track */
+::-webkit-scrollbar-track {
     background: var(--main-background);
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: var(--main-text-light-color);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: var(--main-text-color);
-  }
+}
+
+/* Main Section */
+.content {
+    display: flex;
+}
+
+/* Container Left */
+.content-left {
+    width: 18%;
+    min-width: 15rem;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-top: 0rem;
+    position: fixed;
+    top: 1;
+    left: 0;
+}
+
+.content-left a {
+    color: var(--main-text-color);
+    font-weight: 800;
+    font-size: 2rem;
+    margin-top: 0.8rem;
+    transition: color 0.2s;
+}
+
+.content-left a:hover {
+    color: var(--main-text-light-color);
+}
+
+/* Container Right */
+
+.content-right {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.content-right__title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.content-right__sub-title {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+iframe {
+    margin-left: -20px;
+}
+
+/* Container which contains avatar */
+.avatar-wrapper__avatar__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.avatar {
+    /* margin: 0.5rem; */
+    /* ! replace this with utility call in HTML */
+}
+
+.avatar-group {
+    margin-left: 1.5rem;
+}
+
+/* Container which contains outlined button */
+.outlined-button-wrapper {
+    display: flex;
+}
+
+.outlined-button-wrapper button {
+    margin: 2rem;
+}
