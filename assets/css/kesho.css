@@ -1,4 +1,5 @@
 /* Style Required for Kesho Website */
+
 .kesho-nav {
     position: sticky;
     top: 0;
@@ -8,7 +9,7 @@
 }
 
 .kesho-home-container {
-    margin: 15rem auto;
+    margin: 15rem auto 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,3 +37,24 @@
         max-width: 75%;
     }
 }
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--main-background);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-text-light-color);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-text-color);
+  }
