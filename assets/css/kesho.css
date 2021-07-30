@@ -1,5 +1,7 @@
 /* Style Required for Kesho Website */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap');
+
 .kesho-nav {
     position: sticky;
     top: 0;
@@ -108,8 +110,13 @@
     margin-bottom: 0.5rem;
 }
 
-iframe {
-    margin-left: -20px;
+.code-container {
+    width: 80%;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
 }
 
 /* Container which contains avatar */
@@ -121,7 +128,7 @@ iframe {
 
 .avatar {
     /* margin: 0.5rem; */
-    /* ! replace this with utility call in HTML */
+    /* ! replace this with utility call in HTML to move the single avatar div */
 }
 
 .avatar-group {
