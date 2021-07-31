@@ -120,128 +120,6 @@ a {
     height: 7rem;
 }
 
-/* BUTTON */
-/* Button*/
-.btn {
-    font-size: 1.7rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    padding: 1.3rem 4rem;
-    background: var(--main-background);
-    border: none;
-    box-shadow: 0px 0px 3px 1px var(--input-outline);
-}
-
-.btn:hover {
-    color: var(--main-background);
-    background: var(--main-text-color);
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-/* Icon Button */
-.btn--icon {
-    display: flex;
-    align-items: center;
-}
-
-.btn--icon:hover {
-    color: var(--main-background);
-    background: var(--main-text-color);
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-.btn--icon__icon {
-    margin-right: 0.5rem;
-}
-
-/* Button Helper */
-.btn--sm {
-    font-size: 1.5rem;
-    padding: 0.8rem 2.3rem;
-}
-
-.btn--md {
-    font-size: 1.6rem;
-    padding: 1rem 2.8rem;
-}
-
-.btn--lg {
-    font-size: 1.8rem;
-    padding: 1.2rem 4rem;
-}
-
-/* Link Button */
-.btn--link {
-    border: none;
-    padding: 0.1rem;
-    border-bottom: 2px solid var(--main-text-color);
-    box-shadow: none;
-}
-
-.btn-link:hover {
-    background: var(--main-text-color);
-    color: var(--main-background);
-    transition: all 0.4s;
-}
-
-/* Floating Action Button */
-.btn--floating {
-    padding: 1.5rem;
-    background: var(--main-background);
-    border-radius: 50%;
-    display: flex;
-}
-
-.btn--floating:hover {
-    color: var(--main-background);
-    background: var(--main-text-color);
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-/* Button Outlined */
-.btn--outlined {
-    border: 2px solid var(--main-text-color);
-    justify-content: space-between;
-}
-
-/* HEADING */
-.heading {
-    font-weight: 700;
-}
-
-.heading--h1 {
-    font-size: 5rem;
-}
-
-.heading--h2 {
-    font-size: 4.5rem;
-}
-
-.heading--h3 {
-    font-size: 4rem;
-}
-
-.heading--h4 {
-    font-size: 3.5rem;
-}
-
-.heading--h5 {
-    font-size: 3rem;
-}
-
-.heading--h6 {
-    font-size: 2.5rem;
-}
-
-@media only screen and (max-width: 900px) {
-    html {
-        font-size: 50%;
-    }
-}
-
 /* ALERT */
 /* Alert Main Container */
 .alert {
@@ -386,4 +264,367 @@ a {
     position: absolute;
     bottom: 0.6rem;
     right: 0.1rem;
+}
+
+/* BUTTON */
+/* Button*/
+.btn {
+    font-size: 1.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    padding: 1.3rem 4rem;
+    background: var(--main-background);
+    border: none;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.btn:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Icon Button */
+.btn--icon {
+    display: flex;
+    align-items: center;
+}
+
+.btn--icon:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.btn--icon__icon {
+    margin-right: 0.5rem;
+}
+
+/* Button Helper */
+.btn--sm {
+    font-size: 1.5rem;
+    padding: 0.8rem 2.3rem;
+}
+
+.btn--md {
+    font-size: 1.6rem;
+    padding: 1rem 2.8rem;
+}
+
+.btn--lg {
+    font-size: 1.8rem;
+    padding: 1.2rem 4rem;
+}
+
+/* Link Button */
+.btn--link {
+    border: none;
+    padding: 0.1rem;
+    border-bottom: 2px solid var(--main-text-color);
+    box-shadow: none;
+}
+
+.btn-link:hover {
+    background: var(--main-text-color);
+    color: var(--main-background);
+    transition: all 0.4s;
+}
+
+/* Floating Action Button */
+.btn--floating {
+    padding: 1.5rem;
+    background: var(--main-background);
+    border-radius: 50%;
+    display: flex;
+}
+
+.btn--floating:hover {
+    color: var(--main-background);
+    background: var(--main-text-color);
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+/* Button Outlined */
+.btn--outlined {
+    border: 2px solid var(--main-text-color);
+    justify-content: space-between;
+}
+
+/* CARD */
+.card-product {
+    padding: 2rem;
+    width: 35rem;
+    background: #fff;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.card-product__image__wrapper {
+    position: relative;
+}
+
+.card-product__image {
+    width: 100%;
+}
+
+.card-product__icon {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    background: white;
+    border: none;
+    cursor: pointer;
+}
+
+.card-product__name {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.card-product__description {
+    line-height: 1.5;
+}
+
+.card-product__rating__wrapper {
+    display: flex;
+    margin: 0.5rem 0;
+}
+
+.card-product__rating__icon__wrapper {
+    display: flex;
+    align-items: center;
+    background: var(--main-text-color);
+    color: var(--main-background);
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+}
+
+.card-product__rating__icon__text {
+    margin-right: 0.6rem;
+}
+
+.card-product__rating__reviews {
+    padding: 0.4rem 1rem;
+}
+
+.card-product__price__wrapper {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    align-items: center;
+}
+
+.card-product__price {
+    font-size: 2.3rem;
+}
+
+.card-product__price__crossed {
+    color: var(--main-text-light-color);
+}
+
+/* Video Card */
+
+.card-video {
+    width: 30.1rem;
+}
+
+.card-video__thumbnail__wrapper {
+    position: relative;
+}
+
+.card-video__thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-video__icon {
+    display: none;
+}
+
+.card-video__thumbnail:hover + .card-video__icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-block;
+}
+
+.card-video__title {
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.card-video__details {
+    color: var(--main-text-light-color);
+}
+
+/* Blog Card With Image */
+
+.card-blog {
+    width: 30.1rem;
+    background: #fff;
+    padding: 2rem;
+}
+
+.card-blog__image {
+    width: 100%;
+}
+
+.card-blog__title {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.card-video__details {
+    color: var(--main-text-light-color);
+}
+
+/* Cart Cart */
+/* Product Card */
+.card-cart {
+    max-width: 50rem;
+    width: 90%;
+    display: flex;
+    align-content: center;
+    background: #fff;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.card-cart__image__wrapper {
+    width: 30%;
+}
+
+.card-cart__image {
+    width: 100%;
+    height: auto;
+}
+
+.card-cart__description {
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.card-cart__description__title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card-cart__price__wrapper {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.card-cart__price__crossed {
+    color: var(--main-text-light-color);
+}
+
+.card-cart__control__wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.card-cart__control__button {
+    border: none;
+    background: inherit;
+    border-radius: 50%;
+    padding: 0.6rem;
+    /* Center Icon Inside Button */
+    display: flex;
+}
+
+.card-cart__control__quantity {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+/* Wishlist Card */
+.card-wishlist {
+    max-width: 60rem;
+    display: flex;
+    align-content: center;
+    background: #fff;
+    padding: 2.5rem;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.card-wishlist__image__wrapper {
+    width: 30%;
+}
+
+.card-wishlist__image {
+    width: 100%;
+    height: auto;
+}
+
+.card-wishlist__description {
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.card-wishlist__description__title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.card-wishlist__price__wrapper {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0.8rem 0;
+}
+
+.card-wishlist__price__crossed {
+    color: var(--main-text-light-color);
+}
+
+.card-wishlist__control__wrapper {
+    display: flex;
+    align-content: center;
+}
+
+.card-wishlist__control__button {
+    display: flex;
+    margin-right: 2rem;
+}
+
+/* HEADING */
+.heading {
+    font-weight: 700;
+}
+
+.heading--h1 {
+    font-size: 5rem;
+}
+
+.heading--h2 {
+    font-size: 4.5rem;
+}
+
+.heading--h3 {
+    font-size: 4rem;
+}
+
+.heading--h4 {
+    font-size: 3.5rem;
+}
+
+.heading--h5 {
+    font-size: 3rem;
+}
+
+.heading--h6 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
 }
