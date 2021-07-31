@@ -5,6 +5,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap");
 
+@import url(./utilies.css);
+
 /* VARIABLES */
 :root {
     /* Blue Gray */
@@ -320,4 +322,63 @@ a {
     border-radius: 50%;
     transform: scale(1.1);
     background-color: var(--info-dark);
+}
+
+/* BADGE */
+
+/* Badge on Icons */
+.icon-with-badge {
+    width: fit-content;
+    position: relative;
+    transition: background 0.2s;
+}
+
+.icon-with-badge__icon {
+    font-size: 36px;
+}
+
+.icon-with-badge__text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--main-background);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: var(--main-text-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.icon-with-badge:hover {
+    color: var(--main-text-light-color);
+    transform: scale(1.04);
+    cursor: pointer;
+}
+
+.icon-with-badge:hover .icon-with-badge__text {
+    background: var(--main-text-light-color);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Avatar with Badge */
+.avatar-with-badge {
+    position: relative;
+    width: fit-content;
+}
+
+.avatar-with-badge__badge {
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background: var(--success-dark);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.1rem;
 }
