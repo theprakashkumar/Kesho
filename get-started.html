@@ -61,8 +61,8 @@
             </div>
 
             <div class="content-right">
+                <!-- AVATAR -->
                 <div class="avatar-wrapper element-container">
-                    <!-- AVATAR -->
                     <div class="content-right__title">Avatar</div>
 
                     <div class="content-right__sub-title">Single Avatar</div>
@@ -83,7 +83,6 @@
                         />
 
                         <!-- Avatar Medium -->
-
                         <img
                             src="./assets/images/avatar.png"
                             alt="avatar"
@@ -91,7 +90,6 @@
                         />
 
                         <!-- Avatar Large -->
-
                         <img
                             src="./assets/images/avatar.png"
                             alt="avatar"
@@ -100,40 +98,38 @@
                     </div>
 
                     <pre class="code-container">
-                        <code class="html">
+    <code class="html">
 
-                        /* Avatar Extra-Small */
-                        &lt;img
-                            src="./assets/images/avatar.png"
-                            class="avatar avatar-xs m-0-5"
-                            alt="avatar"
-                        /&gt;
+    &lt;!-- Avatar Extra-Small --&gt;
+    &lt;img
+        src="./assets/images/avatar.png"
+        class="avatar avatar-xs m-0-5"
+        alt="avatar"
+    /&gt;
 
-                        /* Avatar Small */
-                        &lt;img
-                            src="./assets/images/avatar.png"
-                            class="avatar avatar-s m-0-5"
-                            alt="avatar"
-                        /&gt;
+    &lt;!-- Avatar Small --&gt;
+    &lt;img
+        src="./assets/images/avatar.png"
+        class="avatar avatar-s m-0-5"
+        alt="avatar"
+    /&gt;
 
-                        /* Avatar Medium */
+    &lt;!-- Avatar Medium --&gt;
+    &lt;img
+        src="./assets/images/avatar.png"
+        class="avatar avatar-md m-0-5"
+        alt="avatar"
+    /&gt;
 
-                        &lt;img
-                            src="./assets/images/avatar.png"
-                            class="avatar avatar-md m-0-5"
-                            alt="avatar"
-                        /&gt;
+    &lt;!-- Avatar Large --&gt;
+    &lt;img
+        src="./assets/images/avatar.png"
+        class="avatar avatar-l m-0-5"
+        alt="avatar"
+    /&gt;   
 
-                        /* Avatar Large */
-
-                        &lt;img
-                            src="./assets/images/avatar.png"
-                            class="avatar avatar-l m-0-5"
-                            alt="avatar"
-                        /&gt;
-
-                        </code>
-                    </pre>
+    </code>
+</pre>
 
                     <!-- GROUP AVATAR -->
                     <div class="content-right__sub-title">Group Avatar</div>
@@ -157,28 +153,149 @@
                     </div>
 
                     <pre class="code-container">
-                        <code class="html">
-                            &lt;div class="avatar-group"/&gt;
-                                &lt;img
-                                    src="./assets/images/avatar.png"
-                                    alt="avatar"
-                                    class="avatar avatar-group__image"
-                                /&gt;
-                                &lt;img
-                                    src="./assets/images/avatar.png"
-                                    alt="avatar"
-                                    class="avatar avatar-group__image"
-                                /&gt;
-                                &lt;img
-                                    src="./assets/images/avatar.png"
-                                    alt="avatar"
-                                    class="avatar avatar-group__image"
-                                /&gt;
-                            &lt;/div&gt;
-                        </code>
-                    </pre>
+    <code class="html">
+    &lt;div class="avatar-group"/&gt;
+        &lt;img
+            src="./assets/images/avatar.png"
+            alt="avatar"
+            class="avatar avatar-group__image"
+        /&gt;
+        &lt;img
+            src="./assets/images/avatar.png"
+            alt="avatar"
+            class="avatar avatar-group__image"
+        /&gt;
+        &lt;img
+            src="./assets/images/avatar.png"
+            alt="avatar"
+            class="avatar avatar-group__image"
+        /&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+                </div>
 
-                    
+                <!-- ALERT -->
+                <div class="alert-wrapper element-container">
+                    <div class="content-right__title">Alert</div>
+
+                    <!-- Success Alert -->
+                    <div class="alert alert--success">
+                        <span class="material-icons-round alert--success--icon"
+                            >check_circle</span
+                        >
+                        <p class="alert__text">This is a Success Message</p>
+                        <span
+                            class="
+                                material-icons-round
+                                alert__icon__close alert--success--icon--close
+                            "
+                            >close</span
+                        >
+                    </div>
+
+                    <!-- Warning Alert -->
+                    <div class="alert alert--warning">
+                        <span class="material-icons-round alert--warning--icon"
+                            >warning</span
+                        >
+                        <p class="alert__text">This is a Warning Message</p>
+                        <span
+                            class="
+                                material-icons-round
+                                alert__icon__close alert--warning--icon--close
+                            "
+                            >close</span
+                        >
+                    </div>
+
+                    <!-- Error Alert -->
+                    <div class="alert alert--error">
+                        <span class="material-icons-round alert--error--icon"
+                            >error</span
+                        >
+                        <p class="alert__text">This is an Error Message</p>
+                        <span
+                            class="
+                                material-icons-round
+                                alert__icon__close alert--error--icon--close
+                            "
+                            >close</span
+                        >
+                    </div>
+
+                    <!-- Informational Alert -->
+                    <div class="alert alert--info">
+                        <span class="material-icons-round alert--info--icon"
+                            >info</span
+                        >
+                        <p class="alert__text">
+                            This is an Information Message
+                        </p>
+                        <span
+                            class="
+                                material-icons-round
+                                alert__icon__close alert--info--icon--close
+                            "
+                            >close</span
+                        >
+                    </div>
+
+<pre class="pre code-container">
+    <code class="html">
+    &lt;!-- Success Alert --&gt;
+    &lt;div class=&quot;alert alert--success&quot;&gt;
+        &lt;span class=&quot;material-icons-round alert--success--icon&quot;&gt;
+            check_circle
+        &lt;/span&gt;
+        &lt;p class=&quot;alert__text&quot;&gt;This is a Success Message&lt;/p&gt;
+        &lt;span class=&quot;material-icons-round
+                     alert__icon__close 
+                     alert--success--icon--close&quot;&gt;
+            close
+        &lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Warning Alert --&gt;
+    &lt;div class=&quot;alert alert--warning&quot;&gt;
+        &lt;span class=&quot;material-icons-round alert--warning--icon&quot;&gt;
+            warning
+        &lt;/span&gt;
+        &lt;p class=&quot;alert__text&quot;&gt;This is a Warning Message&lt;/p&gt;
+        &lt;span class=&quot;material-icons-round 
+                     alert__icon__close 
+                     alert--warning--icon--close&quot;&gt;
+            close
+        &lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Error Alert --&gt;
+    &lt;div class=&quot;alert alert--error&quot;&gt;
+        &lt;span class=&quot;material-icons-round alert--error--icon&quot;&gt;
+            error
+        &lt;/span&gt;
+        &lt;p class=&quot;alert__text&quot;&gt;This is an Error Message&lt;/p&gt;
+        &lt;span class=&quot;material-icons-round
+                     alert__icon__close 
+                     alert--error--icon--close&quot;&gt;
+            close
+        &lt;/span&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Informational Alert --&gt;
+    &lt;div class=&quot;alert alert--info&quot;&gt;
+        &lt;span class=&quot;material-icons-round alert--info--icon&quot;&gt;
+            info
+        &lt;/span&gt;
+        &lt;p class=&quot;alert__text&quot;&gt;This is an Information Message&lt;/p&gt;
+        &lt;span class=&quot;material-icons-round
+                     alert__icon__close 
+                     alert--info--icon--close&quot;&gt;
+            close
+        &lt;/span&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
                 </div>
             </div>
         </div>

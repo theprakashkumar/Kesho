@@ -119,6 +119,7 @@ code {
     font-weight: 300;
 }
 
+/* ELEMENTS */
 /* Container which contains avatar */
 .avatar-wrapper__avatar__container {
     display: flex;
@@ -143,3 +144,9 @@ code {
 .outlined-button-wrapper button {
     margin: 2rem;
 }
+
+.alert{
+    margin: 1rem 1rem 1rem 0;
+}
+
+/* &lt; &gt; */
