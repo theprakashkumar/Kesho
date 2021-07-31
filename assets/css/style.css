@@ -159,12 +159,17 @@ a {
 /* Button Helper */
 .btn--sm {
     font-size: 1.5rem;
+    padding: 0.8rem 2.3rem;
+}
+
+.btn--md {
+    font-size: 1.6rem;
     padding: 1rem 2.8rem;
 }
 
 .btn--lg {
     font-size: 1.8rem;
-    padding: 1.5rem 4.5rem;
+    padding: 1.2rem 4rem;
 }
 
 /* Link Button */

@@ -46,28 +46,33 @@
 
         <div class="content flex">
             <div class="content-left">
-                <a href="#">Get Started</a>
-                <a href="#">Avatar</a>
-                <a href="#">Alert</a>
-                <a href="#">Badge</a>
-                <a href="#">Button</a>
-                <a href="#">Card</a>
-                <a href="#">Input</a>
-                <a href="#">List</a>
-                <a href="#">Navigation</a>
-                <a href="#">Modal</a>
-                <a href="#">Typography</a>
-                <a href="#">Toast</a>
+                <a href="#get-started">Get Started</a>
+                <a href="#avatar">Avatar</a>
+                <a href="#alert">Alert</a>
+                <a href="#badge">Badge</a>
+                <a href="#button">Button</a>
+                <a href="#card">Card</a>
+                <a href="#input">Input</a>
+                <a href="#list">List</a>
+                <a href="#navigation">Navigation</a>
+                <a href="#modal">Modal</a>
+                <a href="#typography">Typography</a>
+                <a href="#toast">Toast</a>
             </div>
 
             <div class="content-right">
                 <!-- AVATAR -->
-                <div class="avatar-wrapper element-container">
-                    <div class="content-right__title">Avatar</div>
+                <div class="avatar-wrapper element-container" id="avatar">
+                    <div class="content-right__title" id="avatar">Avatar</div>
 
                     <div class="content-right__sub-title">Single Avatar</div>
 
-                    <div class="avatar-wrapper__avatar__container flex flex-align-center flex-justify-start">
+                    <div
+                        class="
+                            avatar-wrapper__avatar__container
+                            flex flex-align-center flex-justify-start
+                        "
+                    >
                         <!-- Avatar Extra-Small -->
                         <img
                             src="./assets/images/avatar.png"
@@ -173,10 +178,11 @@
     &lt;/div&gt;
     </code>
 </pre>
+                    <!-- End of Avatar -->
                 </div>
 
                 <!-- ALERT -->
-                <div class="alert-wrapper element-container">
+                <div class="alert-wrapper element-container" id="alert">
                     <div class="content-right__title">Alert</div>
 
                     <!-- Success Alert -->
@@ -296,10 +302,11 @@
     &lt;/div&gt;
     </code>
 </pre>
+                    <!-- End of Alert -->
                 </div>
 
                 <!-- BADGE -->
-                <div class="badge-wrapper">
+                <div class="badge-wrapper" id="badge">
                     <div class="content-right__title">Badge</div>
                     <div class="content-right__sub-title">Badge on Icon</div>
                     <!-- Badge on Icon -->
@@ -390,6 +397,142 @@
     &lt;/div&gt;
     </code>
 </pre>
+                <!-- End of Badge -->
+                </div>
+
+                <!-- BUTTON -->
+                <div class="button-wrapper" id="button">
+                    <div class="content-right__title">Buttons</div>
+                    <div class="content-right__sub-title">Button</div>
+                    <!-- Small Button -->
+                    <button class="btn btn--sm mr-2">BUTTON</button>
+                    <!-- Medium Button -->
+                    <button class="btn btn--md mr-2">BUTTON</button>
+                    <!-- Large Button -->
+                    <button class="btn btn--lg mr-2">BUTTON</button>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;!-- Small Button --&gt;
+    &lt;button class=&quot;btn btn--sm&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;!-- Medium Button --&gt;
+    &lt;button class=&quot;btn btn--md&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;!-- Large Button --&gt;
+    &lt;button class=&quot;btn btn--lg&quot;&gt;BUTTON&lt;/button&gt;
+    </code>
+</pre>
+
+                    <div class="content-right__sub-title">Icon Button</div>
+
+                    <div class="icon-button-wrapper flex flex-align-center">
+                        <button class="btn btn--icon btn--sm mr-2">
+                            <span class="material-icons-outlined btn--icon__icon">
+                                shopping_bag
+                            </span>
+                            ADD TO BAG
+                        </button>
+    
+                        <button class="btn btn--icon btn--md mr-2">
+                            <span class="material-icons-outlined btn--icon__icon">
+                                shopping_bag
+                            </span>
+                            ADD TO BAG
+                        </button>
+    
+                        <button class="btn btn--icon btn--lg mr-2">
+                            <span class="material-icons-outlined btn--icon__icon">
+                                shopping_bag
+                            </span>
+                            ADD TO BAG
+                        </button>
+                    </div>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;!-- Small Button --&gt;
+    &lt;button class=&quot;btn btn--icon btn--sm mr-2&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined btn--icon__icon&quot;&gt;
+            shopping_bag
+        &lt;/span&gt;
+        ADD TO BAG
+    &lt;/button&gt;
+    
+    &lt;!-- Medium Button --&gt;
+    &lt;button class=&quot;btn btn--icon btn--md mr-2&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined btn--icon__icon&quot;&gt;
+            shopping_bag
+        &lt;/span&gt;
+        ADD TO BAG
+    &lt;/button&gt;
+    
+    &lt;!-- Large Button --&gt;
+    &lt;button class=&quot;btn btn--icon btn--lg mr-2&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined btn--icon__icon&quot;&gt;
+            shopping_bag
+        &lt;/span&gt;
+        ADD TO BAG
+    &lt;/button&gt;
+    </code>
+</pre>
+
+                    <div class="content-right__sub-title">Link Button</div>
+                    <button class="btn btn--link">return policy</button>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;button class=&quot;btn btn--link&quot;&gt;return policy&lt;/button&gt;
+    </code>
+</pre>
+
+                    <div class="content-right__sub-title">
+                        Floating Action Button
+                    </div>
+
+                    <button class="btn btn--floating">
+                        <span class="material-icons-outlined"> north </span>
+                    </button>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;button class=&quot;btn btn--floating&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined&quot;&gt; north &lt;/span&gt;
+    &lt;/button&gt;
+    </code>
+</pre>
+
+                    <div class="content-right__sub-title">Outlined Button</div>
+                    <div class="outlined-button-wrapper flex flex-align-center">
+                        <button class="btn btn--outlined mr-2">BUTTON</button>
+                        <button class="btn btn--icon btn--outlined mr-2">
+                            <span
+                                class="material-icons-outlined btn--icon__icon"
+                            >
+                                shopping_bag
+                            </span>
+                            ADD TO BAG
+                        </button>
+                        <button class="btn btn--floating btn--outlined mr-2">
+                            <span class="material-icons-outlined"> north </span>
+                        </button>
+                    </div>
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;outlined-button-wrapper&quot;&gt;
+    &lt;button class=&quot;btn btn--outlined&quot;&gt;BUTTON&lt;/button&gt;
+    &lt;button class=&quot;btn btn--icon btn--outlined&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined btn--icon__icon&quot;&gt;
+            shopping_bag
+        &lt;/span&gt;
+        ADD TO BAG
+    &lt;/button&gt;
+    &lt;button class=&quot;btn btn--floating btn--outlined&quot;&gt;
+        &lt;span class=&quot;material-icons-outlined&quot;&gt; north &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                <!-- End of Button -->
                 </div>
                 <!-- End of Content Right -->
             </div>
