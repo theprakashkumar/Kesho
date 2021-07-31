@@ -628,3 +628,170 @@ a {
         font-size: 50%;
     }
 }
+
+/* INPUT */
+/* 
+* The background-position property sets the starting position of a background image to left. 
+* The background-origin content-box property will set the background image starting from the upper left corner of the content
+*/
+
+/* Input: Text */
+.input-text {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--main-text-color);
+    font-size: 1.8rem;
+    padding: 1.3rem;
+    border: none;
+    width: 40rem;
+    text-indent: 3.5rem;
+    overflow: hidden;
+    box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-origin: content-box;
+    background-size: 2.5rem;
+}
+
+.input-text-wrapper input:focus {
+    outline: none;
+}
+
+.input-text-full-name {
+    background-image: url(../images/from-icons/full-name.png);
+}
+
+.input-text-email {
+    background-image: url(../images/from-icons/email.png);
+}
+
+.input-text-password {
+    background-image: url(../images/from-icons/password.png);
+}
+
+/* Input: Checkbox */
+
+/* Position the main checkbox so that we can use it as a reference for :after and :before */
+.input-checkbox {
+    position: relative;
+    cursor: pointer;
+    margin-right: .5rem;
+}
+
+/* This will create background of checkbox when it unchecked. */
+.input-checkbox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    border: none;
+    top: -2px;
+    left: -2px;
+    background-color: var(--main-background);
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+/* This will create background of checkbox when it's checked. */
+.input-checkbox:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: -2px;
+    left: -2px;
+    background-color: var(--main-text-color);
+}
+
+/* This will create the checked sign, it's being done by creating a element which has border on only two sides and then just rotate it.*/
+.input-checkbox:checked:after {
+    content: "";
+    display: block;
+    width: .7rem;
+    height: 1.2rem;
+    border: solid var(--main-background);
+    border-width: 0 .2rem .2rem 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -.1rem;
+    left: .3rem;
+}
+
+/* Input: Slider */
+
+.input-range-wrapper {
+    display: flex;
+    width: fit-content;
+}
+
+.input-range {
+    /*removes default webkit styles*/
+    width: 25rem;
+    margin-left: 1rem;
+    -webkit-appearance: none;
+    padding: 1.2rem;
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+}
+
+.input-range::-webkit-slider-runnable-track {
+    height: .2rem;
+    background: var(--main-text-light-color);
+    transition: .4s all;
+}
+
+.input-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 1.3rem;
+    width: 1.3rem;
+    border-radius: 50%;
+    background: var(--main-background);
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+    margin-top: -.5rem;
+}
+
+.input-range:focus {
+    outline: none;
+}
+
+.input-range:hover::-webkit-slider-runnable-track {
+    background: var(--main-text-color);
+    cursor: pointer;
+}
+
+/* Input: Dropdown */
+.input-dropdown {
+    color: var(--main-text-color);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    padding: .2rem;
+    box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
+    outline: none;
+}
+
+/* Outlined Inputs */
+
+/* Text Input Outlined */
+.input-text-outlined {
+    border: 1.7px solid var(--main-text-color);
+    width: fit-content;
+}
+
+/* Checkbox Input Outlined */
+.input-checkbox-outlined:before {
+    border: 1.7px solid var(--main-text-color);
+}
+
+/* Range Input Outlined */
+.input-range-outlined {
+    border: 1.7px solid var(--main-text-color);
+}
+
+/* Dropdown Input Outlined */
+.input-dropdown-outlined {
+    border: 1.7px solid var(--main-text-color);
+}

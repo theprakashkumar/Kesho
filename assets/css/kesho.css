@@ -109,3 +109,9 @@ code {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
 }
+
+/* To set the margin for every input element */
+.input-element-container div {
+    margin: 1rem;
+    margin-left: 0;
+}

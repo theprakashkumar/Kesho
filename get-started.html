@@ -536,7 +536,7 @@
                 </div>
 
                 <!-- CARD -->
-                <div class="card-wrapper">
+                <div class="card-wrapper" id="card">
 
                     <div class="content-right__title">Card</div>
                     <!-- eCommerce Product Card-->
@@ -888,14 +888,203 @@
                 &lt;/span&gt;
                 MOVE TO BAG
             &lt;/button&gt;
-
         &lt;/div&gt;
-
     &lt;/div&gt;
     &lt;/div&gt;
     </code>
 </pre>
-                <!-- Card Already Ended! -->
+
+                <!-- End of Card -->
+                </div>
+
+                <!-- INPUT -->
+                <div class="content-right__title">Input Element</div>
+
+                <div class="input-element-container" id="input">
+                    <!-- ! OVER FLOWING PROBLEM -->
+
+                    <!-- Input: Text -->
+                    <div class="input-text-wrapper">
+                        <input class="input-text  input-text-full-name" type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="input-text-wrapper">
+                        <input class="input-text input-text-email" type="text" placeholder="Email">
+                    </div>
+
+                    <div class="input-text-wrapper">
+                        <input class="input-text input-text-password" type="password" placeholder="Password">
+                    </div>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-text-wrapper&quot;&gt;
+        &lt;input class=&quot;input-text  input-text-full-name&quot; type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;input-text-wrapper&quot;&gt;
+        &lt;input class=&quot;input-text input-text-email&quot; type=&quot;text&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;input-text-wrapper&quot;&gt;
+        &lt;input class=&quot;input-text input-text-password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Input: Checkbox -->
+                    <div class="input-checkbox-wrapper">
+                        <label>
+                            <input type="checkbox" class="input-checkbox">
+                            I accept all terms & conditions.
+                        </label>
+                    </div>
+                    
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-checkbox-wrapper&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;input-checkbox&quot;&gt;
+        I accept all terms &amp; conditions.
+    &lt;/label&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Input: Range -->
+                    <div class="input-range-wrapper">
+                        <label>Price Range:</label>
+                        <input type="range" class="input-range" min="0" max="10">
+                    </div>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-range-wrapper&quot;&gt;
+        &lt;label&gt;Price Range:&lt;/label&gt;
+        &lt;input type=&quot;range&quot; class=&quot;input-range&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Input: Dropdown -->
+                    <div class="input-dropdown-wrapper">
+                        <label> Sort By:
+                            <select class="input-dropdown">
+                                <option value="price-low-to-high">Price: Low to High</option>
+                                <option value="price-high-to-low">Price: High to Low</option>
+                                <option value="popularity">Popularity</option>
+                                <option value="newest-first">Newest First</option>
+                            </select>
+                        </label>
+                    </div>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-dropdown-wrapper&quot;&gt;
+    &lt;label&gt; Sort By:
+        &lt;select class=&quot;input-dropdown&quot;&gt;
+            &lt;option value=&quot;price-low-to-high&quot;&gt;Price: Low to High&lt;/option&gt;
+            &lt;option value=&quot;price-high-to-low&quot;&gt;Price: High to Low&lt;/option&gt;
+            &lt;option value=&quot;popularity&quot;&gt;Popularity&lt;/option&gt;
+            &lt;option value=&quot;newest-first&quot;&gt;Newest First&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+                    
+                    <!-- Outlined Input -->
+                    <!-- Text Input Outlined -->
+                    <div class="content-right__sub-title">Outlined Input</div>
+                    <div class="input-text-wrapper input-text-outlined">
+                        <input class="input-text  input-text-full-name" type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="input-text-wrapper input-text-outlined">
+                        <input class="input-text input-text-email" type="text" placeholder="Email">
+                    </div>
+
+                    <div class="input-text-wrapper input-text-outlined">
+                        <input class="input-text input-text-password" type="password" placeholder="Password">
+                    </div>
+
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-text-wrapper input-text-outlined&quot;&gt;
+        &lt;input class=&quot;input-text  input-text-full-name&quot; type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;input-text-wrapper input-text-outlined&quot;&gt;
+        &lt;input class=&quot;input-text input-text-email&quot; type=&quot;text&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;input-text-wrapper input-text-outlined&quot;&gt;
+        &lt;input class=&quot;input-text input-text-password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Checkbox Input Outlined -->
+                    <div class="input-checkbox-wrapper">
+                        <label>
+                            <input type="checkbox" class="input-checkbox input-checkbox-outlined">
+                            I accept all terms & conditions.
+                        </label>
+                    </div>
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-checkbox-wrapper&quot;&gt;
+    &lt;label&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;input-checkbox input-checkbox-outlined&quot;&gt;
+        I accept all terms &amp; conditions.
+    &lt;/label&gt;
+    &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Range Input Outlined -->
+                    <div class="input-range-wrapper">
+                        <label>Price Range:</label>
+                        <input type="range" class="input-range input-range-outlined" min="0" max="10">
+                    </div>
+<pre class="code-container">
+    <code class="html">
+    &lt;!-- Range Input Outlined --&gt;
+    &lt;div class=&quot;input-range-wrapper&quot;&gt;
+        &lt;label&gt;Price Range:&lt;/label&gt;
+        &lt;input type=&quot;range&quot; class=&quot;input-range input-range-outlined&quot; min=&quot;0&quot; max=&quot;10&quot;&gt;
+        &lt;/div&gt;
+    </code>
+</pre>
+
+                    <!-- Dropdown Input Outlined -->
+                    <div class="input-dropdown-wrapper">
+                    <label> Sort By:
+                        <select class="input-dropdown input-dropdown-outlined">
+                            <option value="price-low-to-high">Price: Low to High</option>
+                            <option value="price-high-to-low">Price: High to Low</option>
+                            <option value="popularity">Popularity</option>
+                            <option value="newest-first">Newest First</option>
+                        </select>
+                    </label>
+                </div>
+<pre class="code-container">
+    <code class="html">
+    &lt;div class=&quot;input-dropdown-wrapper&quot;&gt;
+    &lt;label&gt; Sort By:
+        &lt;select class=&quot;input-dropdown input-dropdown-outlined&quot;&gt;
+            &lt;option value=&quot;price-low-to-high&quot;&gt;Price: Low to High&lt;/option&gt;
+            &lt;option value=&quot;price-high-to-low&quot;&gt;Price: High to Low&lt;/option&gt;
+            &lt;option value=&quot;popularity&quot;&gt;Popularity&lt;/option&gt;
+            &lt;option value=&quot;newest-first&quot;&gt;Newest First&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/label&gt;
+    &lt;/div&gt;
+    </code>
+</pre>              
+                <!-- Eng of Input -->
+                </div>
+                
                 <!-- End of Content Right -->
             </div>
         </div>
