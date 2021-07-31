@@ -2,7 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap");
 
-.kesho-nav {
+.nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -10,7 +10,7 @@
     background: var(--main-background);
 }
 
-.kesho-home-container {
+.home-container {
     margin: 15rem auto 0 auto;
     display: flex;
     flex-direction: column;
@@ -19,22 +19,14 @@
     max-width: 60%;
 }
 
-.kehso-brand {
-    font-size: 4.5rem;
-}
-
-.kesho-home-button {
-    margin-top: 2rem;
-}
-
 @media only screen and (max-width: 110rem) {
-    .kesho-home-container {
+    .home-container {
         margin-top: 10rem;
     }
 }
 
 @media only screen and (max-width: 900px) {
-    .kesho-home-container {
+    .home-container {
         margin-top: 8rem;
         max-width: 75%;
     }
@@ -63,7 +55,6 @@
 
 /* Main Section */
 .content {
-    display: flex;
 }
 
 /* Container Left */
@@ -111,42 +102,10 @@
 }
 
 .code-container {
-    width: 80%;
+    width: 98%;
 }
 
 code {
     font-family: "Roboto Mono", monospace;
     font-weight: 300;
 }
-
-/* ELEMENTS */
-/* Container which contains avatar */
-.avatar-wrapper__avatar__container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.avatar {
-    /* margin: 0.5rem; */
-    /* ! replace this with utility call in HTML to move the single avatar div */
-}
-
-.avatar-group {
-    margin-left: 1.5rem;
-}
-
-/* Container which contains outlined button */
-.outlined-button-wrapper {
-    display: flex;
-}
-
-.outlined-button-wrapper button {
-    margin: 2rem;
-}
-
-.alert {
-    margin: 1rem 1rem 1rem 0;
-}
-
-/* &lt; &gt; */

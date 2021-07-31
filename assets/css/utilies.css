@@ -179,6 +179,10 @@
     margin-left: 1rem;
 }
 
+.ml-1-5 {
+    margin-left: 1.5rem;
+}
+
 .ml-2 {
     margin-left: 2rem;
 }
@@ -332,4 +336,33 @@
 
 .flex-align-start {
     align-items: flex-start;
+}
+
+/* Font Size */
+.fs-1r {
+    font-size: 1rem;
+}
+.fs-2r {
+    font-size: 2rem;
+}
+.fs-3r {
+    font-size: 3rem;
+}
+.fs-3-5r {
+    font-size: 3.5rem;
+}
+.fs-4r {
+    font-size: 4rem;
+}
+.fs-4-5r {
+    font-size: 4.5rem;
+}
+.fs-5r {
+    font-size: 5rem;
+}
+.fs-5-5r {
+    font-size: 5.5rem;
+}
+.fs-6r {
+    font-size: 6rem;
 }
