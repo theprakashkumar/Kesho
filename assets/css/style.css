@@ -594,41 +594,6 @@ a {
     margin-right: 2rem;
 }
 
-/* HEADING */
-.heading {
-    font-weight: 700;
-}
-
-.heading--h1 {
-    font-size: 5rem;
-}
-
-.heading--h2 {
-    font-size: 4.5rem;
-}
-
-.heading--h3 {
-    font-size: 4rem;
-}
-
-.heading--h4 {
-    font-size: 3.5rem;
-}
-
-.heading--h5 {
-    font-size: 3rem;
-}
-
-.heading--h6 {
-    font-size: 2.5rem;
-}
-
-@media only screen and (max-width: 900px) {
-    html {
-        font-size: 50%;
-    }
-}
-
 /* INPUT */
 /* 
 * The background-position property sets the starting position of a background image to left. 
@@ -637,7 +602,7 @@ a {
 
 /* Input: Text */
 .input-text {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--main-text-color);
     font-size: 1.8rem;
     padding: 1.3rem;
@@ -675,7 +640,7 @@ a {
 .input-checkbox {
     position: relative;
     cursor: pointer;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 /* This will create background of checkbox when it unchecked. */
@@ -708,16 +673,16 @@ a {
 .input-checkbox:checked:after {
     content: "";
     display: block;
-    width: .7rem;
+    width: 0.7rem;
     height: 1.2rem;
     border: solid var(--main-background);
-    border-width: 0 .2rem .2rem 0;
+    border-width: 0 0.2rem 0.2rem 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     position: absolute;
-    top: -.1rem;
-    left: .3rem;
+    top: -0.1rem;
+    left: 0.3rem;
 }
 
 /* Input: Slider */
@@ -737,9 +702,9 @@ a {
 }
 
 .input-range::-webkit-slider-runnable-track {
-    height: .2rem;
+    height: 0.2rem;
     background: var(--main-text-light-color);
-    transition: .4s all;
+    transition: 0.4s all;
 }
 
 .input-range::-webkit-slider-thumb {
@@ -750,7 +715,7 @@ a {
     border-radius: 50%;
     background: var(--main-background);
     box-shadow: 0px 0px 3px 1px var(--input-outline);
-    margin-top: -.5rem;
+    margin-top: -0.5rem;
 }
 
 .input-range:focus {
@@ -766,9 +731,9 @@ a {
 .input-dropdown {
     color: var(--main-text-color);
     border: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.6rem;
-    padding: .2rem;
+    padding: 0.2rem;
     box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
     outline: none;
 }
@@ -794,4 +759,77 @@ a {
 /* Dropdown Input Outlined */
 .input-dropdown-outlined {
     border: 1.7px solid var(--main-text-color);
+}
+
+/* MODEL */
+
+.modal {
+    padding: 2rem;
+    width: 35rem;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
+    -webkit-box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
+    -moz-box-shadow: 0px 0px 3px 1px var(--main-text-light-color);
+}
+
+.modal__heading {
+    font-size: 2.3rem;
+}
+
+.modal__icon__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.modal__icon__close:hover {
+    border-radius: 50%;
+    transform: scale(1.1);
+    background-color: var(--main-text-color);
+    color: var(--main-background);
+}
+
+.modal__text {
+    font-size: 1.7rem;
+    padding: 2rem;
+    padding-top: 1rem;
+}
+
+/* TYPOGRAPHY */
+.heading {
+    font-weight: 700;
+}
+
+.heading--h1 {
+    font-size: 5rem;
+}
+
+.heading--h2 {
+    font-size: 4.5rem;
+}
+
+.heading--h3 {
+    font-size: 4rem;
+}
+
+.heading--h4 {
+    font-size: 3.5rem;
+}
+
+.heading--h5 {
+    font-size: 3rem;
+}
+
+.heading--h6 {
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
 }
