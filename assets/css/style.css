@@ -761,6 +761,39 @@ a {
     border: 1.7px solid var(--main-text-color);
 }
 
+/* LIST */
+.list {
+    background: #fff;
+    display: flex;
+    max-width: 40rem;
+    width: 90%;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.list__content-container__image {
+    border-radius: 50%;
+    width: 25%;
+    height: auto;
+}
+
+.list__content-container {
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list__content-container__name{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.list__content-container__content {
+    font-size: 1.7rem
+}
+
 /* MODEL */
 
 .modal {
