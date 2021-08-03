@@ -2,12 +2,23 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap");
 
-.nav {
+.nav-kesho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 3rem;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 20;
     background: var(--main-background);
+}
+
+.nav__brand {
+    font-family: "Pacifico", cursive;
+    color: var(--main-text-color);
+    font-weight: 700;
+    font-size: 3rem;
 }
 
 .home-container {
@@ -114,4 +125,10 @@ code {
 .input-element-container div {
     margin: 1rem;
     margin-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-wrapper code {
+        margin-top: 16rem;
+    }
 }
