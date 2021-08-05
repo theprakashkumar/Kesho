@@ -342,7 +342,8 @@ a {
 /* CARD */
 .card-product {
     padding: 2rem;
-    width: 35rem;
+    max-width: 40rem;
+    width: 96%;
     background: #fff;
     box-shadow: 0px 0px 3px 1px var(--input-outline);
 }
@@ -413,7 +414,8 @@ a {
 /* Video Card */
 
 .card-video {
-    width: 30.1rem;
+    max-width: 35rem;
+    width: 90%;
 }
 
 .card-video__thumbnail__wrapper {
@@ -449,7 +451,8 @@ a {
 /* Blog Card With Image */
 
 .card-blog {
-    width: 30.1rem;
+    max-width: 35rem;
+    width: 90%;
     background: #fff;
     padding: 2rem;
 }
@@ -471,7 +474,7 @@ a {
 /* Product Card */
 .card-cart {
     max-width: 50rem;
-    width: 90%;
+    width: 96%;
     display: flex;
     align-content: center;
     background: #fff;
@@ -530,9 +533,16 @@ a {
     font-weight: 500;
 }
 
+@media only screen and (max-width: 580px) {
+    .card-cart__control__wrapper {
+        width: 80%;
+    }
+}
+
 /* Wishlist Card */
 .card-wishlist {
     max-width: 60rem;
+    width: 100%;
     display: flex;
     align-content: center;
     background: #fff;
@@ -542,6 +552,9 @@ a {
 
 .card-wishlist__image__wrapper {
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-wishlist__image {
@@ -575,9 +588,17 @@ a {
     align-content: center;
 }
 
-.card-wishlist__control__button {
-    display: flex;
+.card-wishlist__control__button:nth-of-type(1) {
     margin-right: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+    .card-wishlist {
+        padding: 0.5rem;
+    }
+    .card-wishlist__control__button {
+        padding: 0.6rem 0.8rem;
+    }
 }
 
 /* INPUT */
@@ -675,6 +696,8 @@ a {
 
 .input-range-wrapper {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
 }
 

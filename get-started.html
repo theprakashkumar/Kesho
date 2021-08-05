@@ -201,10 +201,11 @@
                 </div>
 
                 <!-- ALERT -->
-                <div class="alert-wrapper element-container" id="alert">
+                <div class="alert-wrapper" id="alert">
                     <div class="content-right__title">Alert</div>
 
-                    <!-- Success Alert -->
+                    <div class="alert-wrapper__alert__container">
+                        <!-- Success Alert -->
                     <div class="alert alert--success m-1 ml-0">
                         <span class="material-icons-round alert--success--icon"
                             >check_circle</span
@@ -265,6 +266,9 @@
                             >close</span
                         >
                     </div>
+
+                    </div>
+                    
 
                     <pre class="pre code-container">
     <code class="html">
@@ -329,7 +333,7 @@
                     <div class="content-right__title">Badge</div>
                     <div class="content-right__sub-title">Badge on Icon</div>
                     <!-- Badge on Icon -->
-                    <div class="flex">
+                    <div class="icon-with-badge-wrapper flex">
                         <div class="icon-with-badge mr-2">
                             <span
                                 class="
@@ -395,13 +399,15 @@
                     <div class="content-right__sub-title">Badge on Avatar</div>
 
                     <!-- Badge on Avatar -->
-                    <div class="avatar-with-badge">
-                        <img
-                            class="avatar avatar-s"
-                            src="./assets/images/avatar.png"
-                            alt="avatar"
-                        />
-                        <span class="avatar-with-badge__badge"></span>
+                    <div class="avatar-with-badge-wrapper">
+                        <div class="avatar-with-badge">
+                            <img
+                                class="avatar avatar-s"
+                                src="./assets/images/avatar.png"
+                                alt="avatar"
+                            />
+                            <span class="avatar-with-badge__badge"></span>
+                        </div>
                     </div>
 
                     <pre class="code-container">
@@ -423,12 +429,14 @@
                 <div class="button-wrapper" id="button">
                     <div class="content-right__title">Buttons</div>
                     <div class="content-right__sub-title">Button</div>
-                    <!-- Small Button -->
-                    <button class="btn btn--sm mr-2">BUTTON</button>
-                    <!-- Medium Button -->
-                    <button class="btn btn--md mr-2">BUTTON</button>
-                    <!-- Large Button -->
-                    <button class="btn btn--lg mr-2">BUTTON</button>
+                    <div class="button-wrapper__button__container">
+                        <!-- Small Button -->
+                        <button class="btn btn--sm mr-2">BUTTON</button>
+                        <!-- Medium Button -->
+                        <button class="btn btn--md mr-2">BUTTON</button>
+                        <!-- Large Button -->
+                        <button class="btn btn--lg mr-2">BUTTON</button>
+                    </div>
 
 <pre class="code-container">
     <code class="html">
@@ -495,7 +503,9 @@
 </pre>
 
                     <div class="content-right__sub-title">Link Button</div>
-                    <button class="btn btn--link">return policy</button>
+                    <div class="link-button-wrapper">
+                        <button class="btn btn--link">return policy</button>
+                    </div>
 
 <pre class="code-container">
     <code class="html">
@@ -507,9 +517,11 @@
                         Floating Action Button
                     </div>
 
-                    <button class="btn btn--floating">
-                        <span class="material-icons-outlined"> north </span>
-                    </button>
+                    <div class="floating-action-button-wrapper">
+                        <button class="btn btn--floating">
+                            <span class="material-icons-outlined"> north </span>
+                        </button>
+                    </div>
 
 <pre class="code-container">
     <code class="html">
@@ -917,24 +929,25 @@
                 </div>
 
                 <!-- INPUT -->
-                <div class="content-right__title">Input Element</div>
-
+                
                 <div class="input-element-container" id="input">
+                    <div class="content-right__title">Input Element</div>
                     <!-- ! OVER FLOWING PROBLEM -->
 
-                    <!-- Input: Text -->
-                    <div class="input-text-wrapper">
-                        <input class="input-text  input-text-full-name" type="text" placeholder="Full Name">
-                    </div>
-
-                    <div class="input-text-wrapper">
-                        <input class="input-text input-text-email" type="text" placeholder="Email">
-                    </div>
-
-                    <div class="input-text-wrapper">
-                        <input class="input-text input-text-password" type="password" placeholder="Password">
-                    </div>
-
+                    <div class="input-element-container__text-input__container">
+                        <!-- Input: Text -->
+                        <div class="input-text-wrapper">
+                            <input class="input-text  input-text-full-name" type="text" placeholder="Full Name">
+                        </div>
+    
+                        <div class="input-text-wrapper">
+                            <input class="input-text input-text-email" type="text" placeholder="Email">
+                        </div>
+    
+                        <div class="input-text-wrapper">
+                            <input class="input-text input-text-password" type="password" placeholder="Password">
+                        </div>
+    
 <pre class="code-container">
     <code class="html">
     &lt;div class=&quot;input-text-wrapper&quot;&gt;
@@ -950,12 +963,15 @@
     &lt;/div&gt;
     </code>
 </pre>
+                    </div>
 
                     <!-- Input: Checkbox -->
                     <div class="input-checkbox-wrapper">
                         <label>
                             <input type="checkbox" class="input-checkbox">
-                            I accept all terms & conditions.
+                            <span>
+                                I accept all terms & conditions.
+                            </span>
                         </label>
                     </div>
                     
@@ -972,8 +988,11 @@
 
                     <!-- Input: Range -->
                     <div class="input-range-wrapper">
-                        <label>Price Range:</label>
-                        <input type="range" class="input-range" min="0" max="10">
+                        <div class="input-range-wrapper__range__container">
+                            <label>Price Range:</label>
+                            <input type="range" class="input-range" min="0" max="10">
+                        </div>
+                        
                     </div>
 
 <pre class="code-container">
