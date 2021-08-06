@@ -331,4 +331,19 @@ code {
         flex-direction: column;
         align-items: center;
     }
+
+    .list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .modal {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
 }
