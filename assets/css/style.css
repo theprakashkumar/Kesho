@@ -696,9 +696,6 @@ a {
 
 .input-range-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
 }
 
 .input-range {
@@ -972,5 +969,10 @@ a {
 @media only screen and (max-width: 900px) {
     html {
         font-size: 50%;
+    }
+
+    .input-checkbox-wrapper label {
+        display: flex;
+        align-items: center;
     }
 }

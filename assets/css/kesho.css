@@ -304,4 +304,31 @@ code {
         margin-right: auto;
         padding: 0.5rem;
     }
+
+    /* Inputs */
+    .input-element-container__text-input__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-checkbox-wrapper label {
+        justify-content: center;
+    }
+
+    .input-range-wrapper {
+        justify-content: center;
+    }
+
+
+    .input-dropdown-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .input-element-container__text-input-outlined__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
