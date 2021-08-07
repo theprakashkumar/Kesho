@@ -642,6 +642,13 @@ a {
     background-image: url(../images/from-icons/password.png);
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /* Input: Checkbox */
 
 /* Position the main checkbox so that we can use it as a reference for :after and :before */
@@ -662,6 +669,7 @@ a {
     top: -2px;
     left: -2px;
     background-color: var(--main-background);
+    -webkit-box-shadow: 0px 0px 3px 1px var(--input-outline);
     box-shadow: 0px 0px 3px 1px var(--input-outline);
 }
 

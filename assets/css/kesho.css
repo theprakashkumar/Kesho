@@ -156,14 +156,17 @@ code {
 }
 
 /* To set the margin for every input element */
-.input-element-container div {
+.input-element-container__text-input__container div {
     margin: 1rem;
     margin-left: 0;
 }
 
-.input-element-container div:nth-of-type(1) {
-    margin: 0;
+.input-element-container__text-input-outlined__container div {
+    margin: 1rem;
+    margin-left: 0;
 }
+
+
 
 /* for demonstration for navbar */
 @media only screen and (max-width: 768px) {
