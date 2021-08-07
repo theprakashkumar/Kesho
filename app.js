@@ -32,7 +32,6 @@ contentHamburger.addEventListener("click", contentMobileView);
 const contentLink = document.querySelectorAll(".content-left__link");
 
 const contentCloseMenu = () => {
-    console.log("hi")
     contentHamburger.classList.remove("active");
     contentMenu.classList.remove("active");
 };

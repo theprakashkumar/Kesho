@@ -30,6 +30,12 @@
     max-width: 60%;
 }
 
+/* this will solve the problem of going section heading inside the navbar */
+.escape-navbar {
+    padding-top: 5.5rem;
+    margin-top: -2.8rem;
+}
+
 @media only screen and (max-width: 110rem) {
     .home-container {
         margin-top: 10rem;
@@ -153,6 +159,10 @@ code {
 .input-element-container div {
     margin: 1rem;
     margin-left: 0;
+}
+
+.input-element-container div:nth-of-type(1) {
+    margin: 0;
 }
 
 /* for demonstration for navbar */
@@ -320,7 +330,6 @@ code {
         justify-content: center;
     }
 
-
     .input-dropdown-wrapper {
         display: flex;
         justify-content: center;
@@ -345,5 +354,4 @@ code {
     .content-right__typography__container .heading {
         text-align: center;
     }
-
 }
