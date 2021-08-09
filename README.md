@@ -1,4 +1,4 @@
-# Kesho
+# Keshō
 
 ## Keshō is a free CSS library that provides ready to use frontend web components!
 
