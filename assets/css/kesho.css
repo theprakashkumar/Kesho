@@ -30,6 +30,11 @@
     max-width: 60%;
 }
 
+.btn a {
+    width: 100%;
+    height: 100%;
+}
+
 /* this will solve the problem of going section heading inside the navbar */
 .escape-navbar {
     padding-top: 5.5rem;
