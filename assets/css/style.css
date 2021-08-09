@@ -420,6 +420,8 @@ a {
 
 .card-video__thumbnail__wrapper {
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-video__thumbnail {
