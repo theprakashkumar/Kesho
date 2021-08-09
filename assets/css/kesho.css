@@ -168,7 +168,7 @@ code {
 
 
 
-/* for demonstration for navbar */
+/* for demonstration of navbar */
 @media only screen and (max-width: 768px) {
     .navbar-wrapper code {
         margin-top: 16rem;
@@ -325,8 +325,10 @@ code {
         align-items: center;
     }
 
-    .input-checkbox-wrapper label {
-        justify-content: center;
+    .input-checkbox-wrapper {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .input-range-wrapper {

@@ -642,24 +642,18 @@ a {
     background-image: url(../images/from-icons/password.png);
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
 
 /* Input: Checkbox */
 
 /* Position the main checkbox so that we can use it as a reference for :after and :before */
-.input-checkbox {
+/* .input-checkbox {
     position: relative;
     cursor: pointer;
     margin-right: 0.5rem;
-}
+} */
 
 /* This will create background of checkbox when it unchecked. */
-.input-checkbox:before {
+/* .input-checkbox:before {
     content: "";
     display: block;
     position: absolute;
@@ -671,10 +665,10 @@ a {
     background-color: var(--main-background);
     -webkit-box-shadow: 0px 0px 3px 1px var(--input-outline);
     box-shadow: 0px 0px 3px 1px var(--input-outline);
-}
+} */
 
 /* This will create background of checkbox when it's checked. */
-.input-checkbox:checked:before {
+/* .input-checkbox:checked:before {
     content: "";
     display: block;
     position: absolute;
@@ -683,10 +677,10 @@ a {
     top: -2px;
     left: -2px;
     background-color: var(--main-text-color);
-}
+} */
 
 /* This will create the checked sign, it's being done by creating a element which has border on only two sides and then just rotate it.*/
-.input-checkbox:checked:after {
+/* .input-checkbox:checked:after {
     content: "";
     display: block;
     width: 0.7rem;
@@ -699,6 +693,60 @@ a {
     position: absolute;
     top: -0.1rem;
     left: 0.3rem;
+} */
+
+.input-checkbox-wrapper input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.input-checkbox-wrapper label {
+    position: relative;
+    cursor: pointer;
+}
+
+.input-checkbox-wrapper label:before {
+    content: "";
+    -webkit-appearance: none;
+    /* background-color: transparent; */
+    /* border: 2px solid #0079bf; */
+    background-color: var(--main-background);
+    -webkit-box-shadow: 0px 0px 3px 1px var(--input-outline);
+    box-shadow: 0px 0px 3px 1px var(--input-outline);
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.input-checkbox-wrapper input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid var(--main-text-color);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+@media only screen and (max-width: 900px) {
+    .input-checkbox-wrapper input:checked + label:after {
+        top: 2px;
+    }
+
+    /* .input-checkbox-wrapper label {
+        display: flex;
+        align-items: center;
+    } */
 }
 
 /* Input: Slider */
@@ -762,8 +810,12 @@ a {
 }
 
 /* Checkbox Input Outlined */
-.input-checkbox-outlined:before {
+.input-checkbox-outlined label:before {
     border: 1.7px solid var(--main-text-color);
+}
+
+.input-checkbox-outlined input:checked + label:after {
+    left: 6.5px;
 }
 
 /* Range Input Outlined */
@@ -980,8 +1032,8 @@ a {
         font-size: 50%;
     }
 
-    .input-checkbox-wrapper label {
+    /* .input-checkbox-wrapper label {
         display: flex;
         align-items: center;
-    }
+    } */
 }
