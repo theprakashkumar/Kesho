@@ -107,7 +107,6 @@
 }
 
 /* Container Right */
-
 .content-right {
     width: 80%;
     margin-left: 20%;
@@ -170,8 +169,6 @@ code {
     margin: 1rem;
     margin-left: 0;
 }
-
-
 
 /* for demonstration of navbar */
 @media only screen and (max-width: 768px) {

@@ -413,7 +413,6 @@ a {
 }
 
 /* Video Card */
-
 .card-video {
     max-width: 35rem;
     width: 90%;
@@ -450,7 +449,6 @@ a {
 }
 
 /* Blog Card With Image */
-
 .card-blog {
     max-width: 35rem;
     width: 90%;
@@ -644,57 +642,6 @@ a {
 
 
 /* Input: Checkbox */
-
-/* Position the main checkbox so that we can use it as a reference for :after and :before */
-/* .input-checkbox {
-    position: relative;
-    cursor: pointer;
-    margin-right: 0.5rem;
-} */
-
-/* This will create background of checkbox when it unchecked. */
-/* .input-checkbox:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1.8rem;
-    height: 1.8rem;
-    border: none;
-    top: -2px;
-    left: -2px;
-    background-color: var(--main-background);
-    -webkit-box-shadow: 0px 0px 3px 1px var(--input-outline);
-    box-shadow: 0px 0px 3px 1px var(--input-outline);
-} */
-
-/* This will create background of checkbox when it's checked. */
-/* .input-checkbox:checked:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 1.8rem;
-    height: 1.8rem;
-    top: -2px;
-    left: -2px;
-    background-color: var(--main-text-color);
-} */
-
-/* This will create the checked sign, it's being done by creating a element which has border on only two sides and then just rotate it.*/
-/* .input-checkbox:checked:after {
-    content: "";
-    display: block;
-    width: 0.7rem;
-    height: 1.2rem;
-    border: solid var(--main-background);
-    border-width: 0 0.2rem 0.2rem 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-    top: -0.1rem;
-    left: 0.3rem;
-} */
-
 .input-checkbox-wrapper input {
     padding: 0;
     height: initial;
@@ -712,8 +659,6 @@ a {
 .input-checkbox-wrapper label:before {
     content: "";
     -webkit-appearance: none;
-    /* background-color: transparent; */
-    /* border: 2px solid #0079bf; */
     background-color: var(--main-background);
     -webkit-box-shadow: 0px 0px 3px 1px var(--input-outline);
     box-shadow: 0px 0px 3px 1px var(--input-outline);
@@ -742,11 +687,6 @@ a {
     .input-checkbox-wrapper input:checked + label:after {
         top: 2px;
     }
-
-    /* .input-checkbox-wrapper label {
-        display: flex;
-        align-items: center;
-    } */
 }
 
 /* Input: Slider */
@@ -957,7 +897,6 @@ a {
 }
 
 /* MODAL */
-
 .modal {
     padding: 2rem;
     width: 35rem;
@@ -1031,9 +970,4 @@ a {
     html {
         font-size: 50%;
     }
-
-    /* .input-checkbox-wrapper label {
-        display: flex;
-        align-items: center;
-    } */
 }
